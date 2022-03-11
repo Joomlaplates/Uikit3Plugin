@@ -1,0 +1,11 @@
+Theme-Point General Information
+
+Theme-Point is not Open Source Matters, Inc. nor is it the Joomla! project. Theme-Point does not represent Open Source Matters, Inc. nor does it represent the Joomla! project.
+Theme-Point Licensing Information
+
+All PHP code portions of Theme-Point products are licensed under the GNU/GPLv2 GPL version 2.0. All Theme-Point javascript files, internal javascript included on php files, css sheets, and images, which belong to template are copyright'd material of Theme-Point and are NOT GPL licensed, unless specifically authorized by Theme-Point. Elements (images / CSS / JS etc) of the templates released under this proprietary license can not be redistributed or repackaged for use other than those allowed by the Terms of Use.
+Theme-Point Proprietary License
+
+Theme-Point Proprietary Use License controls non-PHP code elements, such as images, cascading style sheets and JavaScript elements in the released Theme-Point templates. These elements of templates are not compiled together but are sent independently of GPL code and combined in a client's browser, so, do not have to be GPL themselves. These files are not released under the GPL, and are supplied to each paying user for non-exclusive usage per Terms of Use. You may modify or adapt Theme-Point proprietary non-PHP files for the purposes of the domains for which you are licensed hereunder to use allowed by the Terms of Use.
+
+In other words, These files are not released under the GPL, and are supplied to each paying user for personal use only. You may not offer them, modified or unmodified, for redistribution or resale of any kind or include them in a package of your own without prior consent of Theme-Point.com.
