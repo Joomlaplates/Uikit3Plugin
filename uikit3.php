@@ -1,8 +1,9 @@
 <?php defined('_JEXEC') or die;
 /**
  * @Plugin for UIkit 3 Framework
- * @author Joomlaplates
- * @copyright (C) 2021 - Joomlaplates
+ * @version 3.5.16
+ * @author Theme-Point powered by Joomlaplates
+ * @copyright (C) 2010- Theme-Point powered by Joomlaplates
  * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
 **/
 class plgSystemuikit3 extends JPlugin {
@@ -14,15 +15,19 @@ class plgSystemuikit3 extends JPlugin {
 	function onAfterInitialise() {
 
 		$document = JFactory::getDocument();
-		
-			$document->addStyleSheet('plugins/system/uikit3/css/uikit.css',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
-			$document->addScript('plugins/system/uikit3/js/uikit.js',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
-			$document->addScript('plugins/system/uikit3/js/uikit-icons.js',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
-			
-			
-			
 
+		if($this->params->get('uikit') == 1) {
+			$document->addStyleSheet("media/uikit3/css/uikit.css", array(), array('async'=>'async'));
+			$document->addScript("media/uikit3/js/uikit.js", array(), array('async'=>'async'));
+			$document->addScript("media/uikit3/js/uikit-icons.js", array(), array('async'=>'async'));
+		}
+		else {
+			$document->addStyleSheet('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@795e84ad5b13e35521786c93a14f1fe15099d869/css/uikit.css');
+			$document->addScript('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@795e84ad5b13e35521786c93a14f1fe15099d869/js/uikit.js');
+			$document->addScript('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@795e84ad5b13e35521786c93a14f1fe15099d869/js/uikit-icons.js');
+		}
 
 	}
 }
+
 
