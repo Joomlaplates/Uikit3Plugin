@@ -6,24 +6,30 @@
         <creationDate>2022</creationDate>
         <copyright>Joomlaplates</copyright>
         <license>GNU General Public License</license>
-        <authorEmail>support@Theme-Point.com</authorEmail>
-        <authorUrl>http://www.Theme-Point.com</authorUrl>
-        <version>3.5.16</version>
+        <authorEmail>support@Joomlaplates.com</authorEmail>
+        <authorUrl>http://www.Joomlaplates.com</authorUrl>
+        <version>3.5.21</version>
 		<description><![CDATA[
 		
-		<p style="color:#ff0000">Please enable the plugin after Installation.</p>
+		<h3 style="color:#ff0000">Please enable the plugin after Installation.</h3>
+		
+			<p>Plugin to integrate the <a href="https://getuikit.com/docs/introduction" target="_blank">UIkit 3 Framework</a> into your Joomla site. Extension developed by <a href="https://joomlaplates.de" target="_blank">Joomlaplates</a>.
+			</p>
 		<ul>
-		<li>Uikit 3 Version: 3.5.16</li>
-        <li>Plugin for UIkit 3 Framework is a Joomla Plugin Extension developed by Theme-Point powered by Joomlaplates to integrate the <a href="https://getuikit.com/docs/introduction" target="_blank">Uikit 3</a> easily into your Website. </li> 
-		<li>Download Uikit 3 Extensions: Slideshow, Slideset, Accordion, VideoSlider, Stripes, Grid, Mosaic, Pricetable, Portfolio: <a href="https://Joomlaplates.com" target="_blank">Joomlaplates</a> </li>
-		<li>Uikit 3 changelog: <a href="https://github.com/Joomlaplates/uikit3plugin" target="_blank"><u>uikit changelog file</u></a>.</li>
+		<li>Plugin Version: <span class="badge badge bg-info p-1">3.5.21</span> <a href="https://getuikit.com/docs/introduction" target="_blank">Plugin Changelog</a></li> 
+		<li>Uikit 3 Version: <span class="badge badge bg-info p-1">3.11.1</span> <a href="https://getuikit.com/docs/introduction" target="_blank">Uikit 3 Changelog</a></li> 
+		
+       	
 		</ul>
- 
+			<p class="p-3">	<a class="btn btn-success" href="https://demo.joomlaplates.de/uikit/index.php" target="_blank">Uikit 3 Demo</a>
+			<a class="btn btn-success" href="https://www.joomlaplates.de/dokumentation.html" target="_blank">Dokumentation</a>
+			
+			</p>		
 		
     ]]></description>
-	<updateservers>
-		<server type="extension" priority="1" name="My Extension's Updates">https://www.theme-point.com/update/plg_uikit3/update.xml</server>
-	</updateservers>
+<updateservers>
+    <server type="extension" priority="2" name="Uikit 3 Plugin">https://www.joomlaplates.de/updates/uikit/plg_uikit3.xml</server>
+ </updateservers>
 	
 	<files>
 		<filename plugin="uikit3">uikit3.php</filename>
@@ -40,7 +46,7 @@
             <fields name="params">
                 <fieldset name="basic">
 				
-					<field name="uikit" type="radio" default="1" label="Load UIkit 3" class="btn-group" >
+					<field name="uikit" type="radio" default="1" label="How to load UIkit 3 Plugin" class="btn-group" >
                         <option value="1">Local</option>
                         <option value="0">Extern (CDN)</option>
                     </field>
