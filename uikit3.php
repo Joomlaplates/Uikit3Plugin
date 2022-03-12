@@ -1,19 +1,23 @@
-<?php defined('_JEXEC') or die;
-/**
- * @Plugin for UIkit 3 Framework
- * @version 3.5.16
- * @author Theme-Point powered by Joomlaplates
- * @copyright (C) 2010- Theme-Point powered by Joomlaplates
- * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
-**/
-class plgSystemuikit3 extends JPlugin {
-	function __construct(&$subject, $config) {
-		parent::__construct($subject, $config);
-		$this->loadLanguage();
-	}
+<?php
+// no direct access
+defined( '_JEXEC' ) or die;
 
-	function onAfterInitialise() {
+class plgSystemuikit3 extends JPlugin
+{
+	/**
+	 * Load the language file on instantiation. Note this is only available in Joomla 3.1 and higher.
+	 * If you want to support 3.0 series you must override the constructor
+	 *
+	 * @var    boolean
+	 * @since  3.1
+	 */
+	protected $autoloadLanguage = true;
 
+	/**
+	 * Plugin method with the same name as the event will be called automatically.
+	 */
+	 function onBeforeCompileHead()
+	 {
 		$document = JFactory::getDocument();
 
 		if($this->params->get('uikit') == 1) {
@@ -22,12 +26,11 @@ class plgSystemuikit3 extends JPlugin {
 			$document->addScript("media/uikit3/js/uikit-icons.min.js", array(), array('async'=>'async'));
 		}
 		else {
-			$document->addStyleSheet('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@795e84ad5b13e35521786c93a14f1fe15099d869/css/uikit.css');
-			$document->addScript('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@cd26a56e5637a91dcd88e5d5c82bd52f07ac1c0e/js/uikit.min.js');
-			$document->addScript('https://cdn.jsdelivr.net/gh/Joomlaplates/uikit3plugin@cd26a56e5637a91dcd88e5d5c82bd52f07ac1c0e/js/uikit-icons.min.js');
+			$document->addStyleSheet('https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css');
+			$document->addScript('https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js');
+			$document->addScript('https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js');
 		}
-
+		return true;
 	}
 }
-
-
+?>
