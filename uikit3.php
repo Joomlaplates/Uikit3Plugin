@@ -21,9 +21,9 @@ class plgSystemuikit3 extends JPlugin
 		$document = JFactory::getDocument();
 
 		if($this->params->get('uikit') == 1) {
-			$document->addStyleSheet("media/uikit3/css/uikit.css", array(), array('async'=>'async'));
-			$document->addScript("media/uikit3/js/uikit.min.js", array(), array('async'=>'async'));
-			$document->addScript("media/uikit3/js/uikit-icons.min.js", array(), array('async'=>'async'));
+			$document->addStyleSheet('media/uikit3/css/uikit.css',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
+			$document->addScript('media/uikit3/js/uikit.min.js',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
+			$document->addScript('media/uikit3/js/uikit-icons.min.js',array('version' => 'auto', 'relative' => true), array('defer' => 'defer'));
 		}
 		else {
 			$document->addStyleSheet('https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css');
