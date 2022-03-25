@@ -1,7 +1,7 @@
 # Changelog
 	3.5.21
 	+ Add external load option
-	# Update uikit to 3.11.1
+	# Update uikit to 3.13.1
 	
 	3.5.20
 	# changed defer to load before DOM Script
